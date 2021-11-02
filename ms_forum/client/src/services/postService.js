@@ -29,36 +29,6 @@ async function editPost(postId, post){
     return await http.put(`${apiUrl}/posts/${postId}`, post)
 }
 
-export function sortPostsBy(postsArray, sortBy) {
-
-    //duplicate the array
-    let posts = [...postsArray];
-
-    switch (sortBy) {
-      case "NEWEST":
-        posts.reverse();
-        break;
-      case "OLDEST":
-        break;
-      case "LIKES":
-        posts.sort((a, b) => {
-          return b.numOfLikes - a.numOfLikes;
-        });
-        break;
-      case "COMMENTS":
-        posts.sort((a, b) => {
-          return b.comments?.length - a.comments?.length;
-        });
-        break;
-      default:
-        //newest
-        posts.reverse();
-        break;
-    }
-
-    return posts;
-  };
-
 
 const exportedObject = {
     createPost,
@@ -68,7 +38,6 @@ const exportedObject = {
     getMyPosts,
     deletePost,
     editPost,
-    sortPostsBy,
 }
 
 export default exportedObject;

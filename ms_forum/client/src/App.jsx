@@ -45,7 +45,7 @@ class App extends Component {
         <header>
           <Navbar user={user} />
         </header>
-        <main style={{ minHeight: 800, background: "rgb(214, 229, 241)" }}>
+        <main style={{ minHeight: 800, background: "rgb(241, 244, 247)" }}>
           <div className="container bg-light">
             <div className="row">
               <div className="col-9">
