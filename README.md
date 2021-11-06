@@ -1,2 +1,2 @@
 # M.S-forum
-chat - forum app. writen at react, node, express & mongoDB.
+chat - forum app. written at react, node, express & mongoDB.
